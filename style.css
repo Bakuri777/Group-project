@@ -65,3 +65,65 @@ body {
 .search:hover {
   transform: scale(1.1);
 }
+/* ---fashion picture and text--- */
+
+.fashion {
+  display: flex;
+  justify-content: center;
+  margin-top: 133px;
+  padding-bottom: 73px;
+}
+
+.fashion-image {
+  width: 1272px;
+  height: 559px;
+  background-image: url("./assets/main picture.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  position: relative;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.fashion-image:hover {
+  transform: scale(1.05);
+}
+/* ---text position--- */
+.fashion-content {
+  position: absolute;
+  left: 57px;
+  top: 218px;
+  color: #fff;
+}
+/* ---small title--- */
+.fashion-content h3 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.23em;
+  margin-bottom: 22px;
+}
+/* ---main title--- */
+.fashion-content h1 {
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 19px;
+  max-width: 627px;
+}
+
+/* ---text paragraph--- */
+.fashion-content p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 494px;
+}
+
+/* ---Transitional color--- */
+.text-colour {
+  font-weight: 700;
+  background: linear-gradient(90deg, #4ce0d7 0%, #8ba9f4 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
