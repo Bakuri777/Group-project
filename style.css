@@ -127,3 +127,80 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+
+/* ---topics-grid--- */
+
+/* ---6 equal columns--- */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+.topics {
+  padding: 73px 84px;
+}
+
+.topics h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: #262626;
+}
+
+.topic-card {
+  width: 204px;
+  height: 291px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+/* ---card hover--- */
+.topic-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
+}
+.topic-card img {
+  width: 80px;
+  height: auto;
+}
+
+.topic-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #262626;
+}
+
+.topic-card a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #4ce0d7;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 40px;
+  transition: 0.3s;
+}
+/* ---topic-card hover--- */
+.topic-card a:hover {
+  transform: scale(1.05);
+}
+
+/* ---image fade--- */
+.topic-card img {
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.topic-card:hover img {
+  opacity: 1;
+}
