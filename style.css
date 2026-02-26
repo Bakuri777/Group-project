@@ -9,6 +9,11 @@ body {
   background-color: #f9f9f9;
 }
 
+.box {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
 /* ---header--- */
 
 /* ----fixed header--- */
@@ -203,4 +208,14 @@ body {
 
 .topic-card:hover img {
   opacity: 1;
+}
+/* ---dividing line--- */
+
+.line {
+  width: 100%;
+  max-width: 1267px;
+  height: 1px;
+  background-color: #bcbcbc;
+  border: none;
+  margin: 60px auto 0;
 }
