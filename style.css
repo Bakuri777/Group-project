@@ -131,6 +131,7 @@ header {
   font-weight: 700;
   background: linear-gradient(90deg, #4ce0d7 0%, #8ba9f4 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
