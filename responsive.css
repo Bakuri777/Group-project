@@ -1,0 +1,172 @@
+@media (max-width: 1280px) {
+  .header {
+    padding: 30px 50px;
+  }
+
+  .fashion-image {
+    width: 95%;
+  }
+
+  .topics {
+    padding: 60px 50px;
+  }
+
+  .topics-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .header {
+    padding: 25px 40px;
+  }
+
+  .fashion-image {
+    height: 480px;
+  }
+
+  .fashion-content h1 {
+    font-size: 38px;
+  }
+
+  .topics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1110px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+}
+
+/* ============================= */
+/* --------- TABLET ------------ */
+/* ============================= */
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 40px;
+  }
+
+  .nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .fashion-image {
+    height: 450px;
+  }
+
+  .topics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================= */
+/* --------- MOBILE ------------ */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fashion {
+    margin-top: 100px;
+  }
+
+  .fashion-image {
+    height: 350px;
+  }
+
+  .fashion-content {
+    left: 30px;
+    top: 150px;
+  }
+
+  .fashion-content h1 {
+    font-size: 32px;
+  }
+
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-meta {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .featured-hot {
+    margin-left: 0;
+  }
+  .topics h2 {
+    text-align: center;
+  }
+}
+
+/* ============================= */
+/* -------- SMALL PHONE -------- */
+/* ============================= */
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px;
+  }
+
+  .fashion-image {
+    height: 280px;
+  }
+
+  .fashion-content {
+    left: 20px;
+    top: 120px;
+  }
+
+  .fashion-content h1 {
+    font-size: 24px;
+  }
+
+  .fashion-content p {
+    font-size: 14px;
+  }
+
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-card {
+    width: 100%;
+  }
+
+  .featured-content {
+    padding: 30px;
+  }
+
+  .featured-title {
+    font-size: 20px;
+  }
+
+  .featured-text {
+    font-size: 14px;
+  }
+  .topics h2 {
+    text-align: center;
+  }
+}
