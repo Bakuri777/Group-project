@@ -7,16 +7,28 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
+  padding-top: 110px; /* ---body won't go under header--- */
 }
 
+<<<<<<< Updated upstream
+=======
+/* კოლეგის მოთხოვნილი .box კლასი */
+>>>>>>> Stashed changes
 .box {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 }
+<<<<<<< Updated upstream
 /* ---header--- */
 
 /* ----fixed header--- */
+=======
+
+/* =========================================
+   2. Header & Nav (პირველი ნაწილიდან)
+========================================= */
+>>>>>>> Stashed changes
 header {
   position: fixed;
   top: 0;
@@ -26,11 +38,6 @@ header {
   z-index: 1000;
 }
 
-/* ---body won't go under header--- */
-body {
-  padding-top: 110px;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -38,7 +45,10 @@ body {
   padding: 37px 84px;
 }
 
+<<<<<<< Updated upstream
 /* ---navigation--- */
+=======
+>>>>>>> Stashed changes
 .nav {
   display: flex;
   align-items: center;
@@ -51,6 +61,7 @@ body {
   color: #262626;
   padding: 8px 16px;
   border-radius: 40px;
+  text-decoration: none;
   background-color: transparent;
   transition: 0.3s ease;
 }
@@ -70,8 +81,15 @@ body {
 .search:hover {
   transform: scale(1.1);
 }
+<<<<<<< Updated upstream
 /* ---fashion picture and text--- */
 
+=======
+
+/* =========================================
+   3. Fashion Picture and Text
+========================================= */
+>>>>>>> Stashed changes
 .fashion {
   display: flex;
   justify-content: center;
@@ -91,24 +109,25 @@ body {
   color: #ffffff;
   transition: 0.3s;
 }
+
 .fashion-image:hover {
   transform: scale(1.05);
 }
-/* ---text position--- */
+
 .fashion-content {
   position: absolute;
   left: 57px;
   top: 218px;
   color: #fff;
 }
-/* ---small title--- */
+
 .fashion-content h3 {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.23em;
   margin-bottom: 22px;
 }
-/* ---main title--- */
+
 .fashion-content h1 {
   font-size: 46px;
   font-weight: 400;
@@ -117,7 +136,6 @@ body {
   max-width: 627px;
 }
 
-/* ---text paragraph--- */
 .fashion-content p {
   font-size: 20px;
   font-weight: 400;
@@ -125,7 +143,6 @@ body {
   max-width: 494px;
 }
 
-/* ---Transitional color--- */
 .text-colour {
   font-weight: 700;
   background: linear-gradient(90deg, #4ce0d7 0%, #8ba9f4 100%);
@@ -133,15 +150,9 @@ body {
   color: transparent;
 }
 
-/* ---topics-grid--- */
-
-/* ---6 equal columns--- */
-.topics-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-  justify-content: center;
-}
+/* =========================================
+   4. Topics Grid
+========================================= */
 .topics {
   padding: 73px 84px;
 }
@@ -151,6 +162,13 @@ body {
   font-weight: 700;
   margin-bottom: 48px;
   color: #262626;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  justify-content: center;
 }
 
 .topic-card {
@@ -165,18 +183,23 @@ body {
   justify-content: center;
   gap: 20px;
   text-align: center;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* ---card hover--- */
+
 .topic-card:hover {
   transform: translateY(-8px);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1);
 }
+
 .topic-card img {
   width: 80px;
   height: auto;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.topic-card:hover img {
+  opacity: 1;
 }
 
 .topic-card h3 {
@@ -192,6 +215,7 @@ body {
   color: #ffffff;
   font-size: 12px;
   font-weight: 700;
+  text-decoration: none;
   border-radius: 40px;
   transition: 0.3s;
 }
@@ -200,6 +224,7 @@ body {
   transform: scale(1.05);
 }
 
+<<<<<<< Updated upstream
 /* ---image fade--- */
 .topic-card img {
   opacity: 0.5;
@@ -211,6 +236,8 @@ body {
 }
 /* ---dividing line--- */
 
+=======
+>>>>>>> Stashed changes
 .line {
   width: 100%;
   max-width: 1267px;
@@ -218,4 +245,284 @@ body {
   background-color: #bcbcbc;
   border: none;
   margin: 60px auto 0;
+<<<<<<< Updated upstream
 }
+=======
+} /* აქ აკლდა ფრჩხილი შენს ვერსიაში და ჩავამატე */
+
+/* =========================================
+   5. პოსტების კონტეინერი და ბარათი (მეორე ნაწილიდან)
+========================================= */
+.posts-container {
+    max-width: 1204px; /* ეს რჩება თავის სიგანეზე, მაგრამ .box გააკონტროლებს საერთო ჩარჩოს */
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.post-card {
+    display: flex;
+    width: 100%;
+    height: 368px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px); 
+}
+
+/* სურათის სექცია და ბეიჯი */
+.post-image-box {
+    width: 547px;
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 26px;  
+    left: 34px; 
+    width: 175px;
+    height: 36px;
+    background: #262626;
+    color: #FFFFFF;
+    border-radius: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.badge:hover {
+    background: #000000;
+}
+
+/* კონტენტის სექცია */
+.post-content {
+    padding: 40px 68px 40px 46px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.author-row {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 65px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1; 
+    color: #BCBCBC;
+    flex-grow: 1; 
+}
+
+.post-date {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #BCBCBC;
+}
+
+.post-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1; 
+    color: #262626;
+    max-width: 543px; 
+    margin-bottom: 20px; 
+}
+
+.post-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6; 
+    color: #262626; 
+    max-width: 569px; 
+    margin-bottom: 25px; 
+}
+
+/* Read More ღილაკი და ისარი */
+.read-more-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    cursor: pointer;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.arrow-icon {
+    width: 52px;
+    height: 39px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.read-more-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1; 
+    letter-spacing: 0.24em; 
+    color: #4CE0D7;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.read-more-wrapper:hover .read-more-btn {
+    text-decoration: underline;
+    text-decoration-color: #4CE0D7;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.read-more-wrapper:hover .arrow-icon {
+    transform: translateX(8px);
+}
+
+/* =========================================
+   6. Footer 
+========================================= */
+.main-footer {
+    background-color: #FFFFFF;
+    margin-top: 100px;
+    border-radius: 40px 40px 0 0; 
+    box-shadow: 0px -6px 6px rgba(0, 0, 0, 0.05); 
+    padding: 60px 0 30px 0;
+}
+
+.footer-inner {
+    max-width: 1267px; 
+    margin: 0 auto;
+    padding: 0 40px; 
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.highlight-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.highlight-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 147px;
+    height: 20px;
+    background-color: #4CE0D7;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border-radius: 2px;
+}
+   
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    color: #262626;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: scale(1.2);
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #BCBCBC;
+    margin-bottom: 30px;
+}
+
+.footer-bottom {
+    text-align: left;
+}
+
+.footer-bottom p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-social {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+>>>>>>> Stashed changes
