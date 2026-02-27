@@ -1,34 +1,28 @@
+
+/* =========================================
+   1. ძირითადი პარამეტრები (Reset & Body)
+========================================= */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
-  padding-top: 110px; /* ---body won't go under header--- */
+  padding-top: 110px;
 }
 
-<<<<<<< Updated upstream
-=======
-/* კოლეგის მოთხოვნილი .box კლასი */
->>>>>>> Stashed changes
 .box {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
 }
-<<<<<<< Updated upstream
-/* ---header--- */
-
-/* ----fixed header--- */
-=======
 
 /* =========================================
-   2. Header & Nav (პირველი ნაწილიდან)
+   2. Header & Nav
 ========================================= */
->>>>>>> Stashed changes
 header {
   position: fixed;
   top: 0;
@@ -45,10 +39,6 @@ header {
   padding: 37px 84px;
 }
 
-<<<<<<< Updated upstream
-/* ---navigation--- */
-=======
->>>>>>> Stashed changes
 .nav {
   display: flex;
   align-items: center;
@@ -66,7 +56,6 @@ header {
   transition: 0.3s ease;
 }
 
-/* ---navigation hover--- */
 .nav a:hover {
   background-color: #4ce0d7;
   transform: rotate(3deg);
@@ -81,15 +70,10 @@ header {
 .search:hover {
   transform: scale(1.1);
 }
-<<<<<<< Updated upstream
-/* ---fashion picture and text--- */
-
-=======
 
 /* =========================================
    3. Fashion Picture and Text
 ========================================= */
->>>>>>> Stashed changes
 .fashion {
   display: flex;
   justify-content: center;
@@ -219,25 +203,11 @@ header {
   border-radius: 40px;
   transition: 0.3s;
 }
-/* ---topic-card hover--- */
+
 .topic-card a:hover {
   transform: scale(1.05);
 }
 
-<<<<<<< Updated upstream
-/* ---image fade--- */
-.topic-card img {
-  opacity: 0.5;
-  transition: 0.3s ease;
-}
-
-.topic-card:hover img {
-  opacity: 1;
-}
-/* ---dividing line--- */
-
-=======
->>>>>>> Stashed changes
 .line {
   width: 100%;
   max-width: 1267px;
@@ -245,16 +215,13 @@ header {
   background-color: #bcbcbc;
   border: none;
   margin: 60px auto 0;
-<<<<<<< Updated upstream
 }
-=======
-} /* აქ აკლდა ფრჩხილი შენს ვერსიაში და ჩავამატე */
 
 /* =========================================
-   5. პოსტების კონტეინერი და ბარათი (მეორე ნაწილიდან)
+   5. პოსტების კონტეინერი და ბარათი
 ========================================= */
 .posts-container {
-    max-width: 1204px; /* ეს რჩება თავის სიგანეზე, მაგრამ .box გააკონტროლებს საერთო ჩარჩოს */
+    max-width: 1204px; 
     margin: 60px auto;
     display: flex;
     flex-direction: column;
@@ -276,7 +243,6 @@ header {
     transform: translateY(-5px); 
 }
 
-/* სურათის სექცია და ბეიჯი */
 .post-image-box {
     width: 547px;
     height: 100%;
@@ -313,7 +279,6 @@ header {
     background: #000000;
 }
 
-/* კონტენტის სექცია */
 .post-content {
     padding: 40px 68px 40px 46px; 
     display: flex;
@@ -373,7 +338,6 @@ header {
     margin-bottom: 25px; 
 }
 
-/* Read More ღილაკი და ისარი */
 .read-more-wrapper {
     display: flex;
     align-items: center;
@@ -525,4 +489,3 @@ header {
         gap: 15px;
     }
 }
->>>>>>> Stashed changes
