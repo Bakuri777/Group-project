@@ -478,20 +478,6 @@ header {
     line-height: 1;
 }
 
-@media (max-width: 768px) {
-    .footer-top {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-    
-    .footer-social {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
-
-
 /* ---featured section--- */
 
 .featured {
