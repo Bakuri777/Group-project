@@ -838,8 +838,8 @@ header {
   font-weight: 700;
   font-size: 32px;
   color: rgba(38, 38, 38, 1);
-  width: 1204px;
-  margin: 0 auto 20px auto;
+  /* margin-left: 84px; */
+  margin-bottom: 55px;
 }
 .big-summer {
   width: 565px;
